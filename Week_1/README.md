@@ -19,8 +19,8 @@ Courses
 -----------
 ### 리눅스란?
 리눅스(Linux)는 리누스 토발즈가 커뮤니티 주체로 유닉스(UNIX) 운영체제를 기반으로 만들어진 컴퓨터 운영체제입니다. 리눅스(Linux)는 유닉스(UNIX)와 마찬가지로 다중 사용자, 다중 작업(멀티태스킹), 다중 스레드를 지원하는 네트워크 운영 체제(NOS)입니다. 현재는 상당수의 웹 서버와 모바일 장치(안드로이드 등)를 구동하는 운영체제로도 많이 이용이 되고 있습니다.
-* LINUX (Linux is Not Unix)  : '리눅스는 유닉스가 아니다'의 약자
-* NOS (Network Operation System) : 사람이 컴퓨터를 사용할 수 있도록 하는 프로그램 중 하나
+- LINUX (Linux is Not Unix)  : '리눅스는 유닉스가 아니다'의 약자
+- NOS (Network Operation System) : 사람이 컴퓨터를 사용할 수 있도록 하는 프로그램 중 하나
 
 ### 리눅스를 사용해야하는 이유
 1. 모든 소스가 오픈되어 있어 광범위하게 사용된다.
@@ -32,8 +32,11 @@ Courses
 2. 직접 운영체제 설치
 3. 가상머신(Virtual box)
 
-
-
+### 리눅스 명령어 정리
+- 디렉토리와 파일
+  <details><summary>PWD</summary><div markdown="1">
+test
+</div></details>
 
 
 ### Git & Github
