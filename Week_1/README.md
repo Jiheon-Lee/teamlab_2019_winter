@@ -260,7 +260,7 @@ Courses
 전역 사용자명/이메일 설정
 <pre>$ git config - -global user.name “Your name” 
 $ git config - -global user.email “Your email address”
-    --global 옵션은 전역 설정에 대한 옵션</pre>
+    --global 옵션은 전역 설정에 대한 옵션</pre><br>
     
 - **기본 명령어**<br>
 현재 git의 버전을 확인
@@ -278,7 +278,7 @@ staging area에 올라가 있는 파일들을 commit
 이전에 어떠한 작업을 했는지 조회
 <pre>$ git diff</pre>
 두 개의 버전에서 소스코드의 차이점을 보여줌
-<pre>$ git diff {commit 고유번호}..{다른 commit 고유번호}</pre>
+<pre>$ git diff {commit 고유번호}..{다른 commit 고유번호}</pre><br>
 
 - **Branch와 Merge**<br>
   - **Branch**<br>
@@ -289,10 +289,10 @@ staging area에 올라가 있는 파일들을 commit
   <pre>$ git branch {branch명}
            - master가 기본 branch</pre>
   다른 브랜치로 변경
-  <pre>$ git checkout <branch명></pre>
-  - **Merge**
+  <pre>$ git checkout <branch명></pre><br>
+  - **Merge**<br>
   현재 브랜치에서 입력한 브랜치와 merge(합치다)
-  <pre>$ git merger {branch명}</pre>
+  <pre>$ git merger {branch명}</pre><br>
   
 - **로그 관리**<br>
   변경된 사항의 기록들을 확인
@@ -302,7 +302,7 @@ staging area에 올라가 있는 파일들을 commit
   <pre>$ git revert
          -n : 바로 commit 하지 않기 때문에 여러번한 다음에 commit이 가능</pre>
   예전 버전으로 돌아감
-  <pre>$ git reset {commit 고유번호} --hard</pre>
+  <pre>$ git reset {commit 고유번호} --hard</pre><br>
   
 - **원격저장소 :remote repository**<br>
   원격저장소 만들 때는 수정이 불가한 저장소의 역할만 하는 디렉토리를 만들어야 한다.
