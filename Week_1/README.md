@@ -34,9 +34,11 @@ Courses
 
 ### 리눅스 명령어 정리
 - 디렉토리와 파일
-  <details><summary>PWD</summary><div markdown="1">
-test
-</div></details>
+  <details><summary>PWD</summary>
+  <div markdown="1">
+  현재 경로 보기<br>
+  ![alt text](/2.png )
+  </div></details>
 
 
 ### Git & Github
