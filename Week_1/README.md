@@ -37,7 +37,7 @@ Courses
   <details><summary>PWD</summary>
   <div markdown="1">
   현재 경로 보기<br>
-  ![alt text](/2.png )
+  ![PWD](./img/pwd.png)
   </div></details>
 
 
