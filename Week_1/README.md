@@ -281,7 +281,7 @@ staging area에 올라가 있는 파일들을 commit
 <pre>$ git diff {commit 고유번호}..{다른 commit 고유번호}</pre>
 
 - **Branch와 Merge**<br>
-  - **Branch**
+  - **Branch**<br>
   현재 존재하는 브랜치를 조회
   <pre>$ git branch
          -r : 원격저장소의 브랜치를 확인</pre>
