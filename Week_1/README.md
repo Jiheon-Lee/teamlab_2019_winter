@@ -1,4 +1,4 @@
-1주차 Linux Bootcamp,Git & Github
+1주차 Linux Bootcamp, Git & Github
 ================================
 
 Github 페이지 형성 후 README.md에 프로젝트 명과 기간 등 필요 내용 추가하기 2020.01.02 ~ 2020.01.08
@@ -37,8 +37,7 @@ Courses
   <details><summary>PWD</summary>
   <div markdown="1">
   현재 경로 보기<br>
-  ![PWD](./img/pwd.png)
-  </div></details>
+  ![PWD](https://user-images.githubusercontent.com/48443734/71870559-af3bbe80-3159-11ea-94dc-cf828b629c1a.PNG)
 
 
 ### Git & Github
