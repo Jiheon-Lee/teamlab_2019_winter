@@ -294,7 +294,7 @@ staging area에 올라가 있는 파일들을 commit
   현재 브랜치에서 입력한 브랜치와 merge(합치다)
   <pre>$ git merger {branch명}</pre>
   
-  - **로그 관리**<br>
+- **로그 관리**<br>
   변경된 사항의 기록들을 확인
   <pre>$ git log
          -p : 더 자세하게 보여줌</pre>
@@ -304,7 +304,7 @@ staging area에 올라가 있는 파일들을 commit
   예전 버전으로 돌아감
   <pre>$ git reset {commit 고유번호} --hard</pre>
   
-  - **원격저장소 :remote repository**<br>
+- **원격저장소 :remote repository**<br>
   원격저장소 만들 때는 수정이 불가한 저장소의 역할만 하는 디렉토리를 만들어야 한다.
   <pre>$ git init --bare {디렉토리명}</pre>
   현재 저장소에 원격저장소를 add(연결)한다. 경로 앞에 origin이라 하면 경로는 origin을 가르킴, 원격저장소의 기본 이름은 origin
