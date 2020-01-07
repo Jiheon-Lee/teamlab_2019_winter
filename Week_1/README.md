@@ -20,24 +20,24 @@ Courses
 ### 리눅스란?
 리눅스(Linux)는 리누스 토발즈가 커뮤니티 주체로 유닉스(UNIX) 운영체제를 기반으로 만들어진 컴퓨터 운영체제입니다. 리눅스(Linux)는 유닉스(UNIX)와 마찬가지로 다중 사용자, 다중 작업(멀티태스킹), 다중 스레드를 지원하는 네트워크 운영 체제(NOS)입니다. 현재는 상당수의 웹 서버와 모바일 장치(안드로이드 등)를 구동하는 운영체제로도 많이 이용이 되고 있습니다.
 - LINUX (Linux is Not Unix)  : '리눅스는 유닉스가 아니다'의 약자
-- NOS (Network Operation System) : 사람이 컴퓨터를 사용할 수 있도록 하는 프로그램 중 하나
+- NOS (Network Operation System) : 사람이 컴퓨터를 사용할 수 있도록 하는 프로그램 중 하나<br>
 
 ### 리눅스를 사용해야하는 이유
 1. 모든 소스가 오픈되어 있어 광범위하게 사용된다.
 2. 다중사용자, 다중작업을 지원하기 때문에 시스템적으로 서버를 운영하기에 적합하다.
-3. 리눅스는 무료이며 개발 환경이 풍부하다.
+3. 리눅스는 무료이며 개발 환경이 풍부하다.<br>
 
 ### 리눅스 실습 환경 만들기
 1. 설치가 필요없는 CodeOnWeb <https://codeonweb.com>
 2. 직접 운영체제 설치
-3. 가상머신(Virtual box)
+3. 가상머신(Virtual box)<br>
 
 ### 리눅스 명령어 정리
 - **디렉토리와 파일**
   - **PWD**<br>
   현재 경로 보기<br>
   <img src="https://user-images.githubusercontent.com/48443734/71870559-af3bbe80-3159-11ea-94dc-cf828b629c1a.PNG"></img><br/>
-  <pre> 현재 경로는 /root 라고 표시되어 있다. </pre>
+  <pre> 현재 경로는 /root 라고 표시되어 있다. </pre><br>
   
   - **CD**<br>
   해당 디렉토리 이동하기<br>
@@ -47,7 +47,7 @@ Courses
        cd ~ : 홈 디렉토리로 이동
        cd - : 이전 작업 디렉토리로 이동</pre>
   <img src="https://user-images.githubusercontent.com/48443734/71871481-a7314e00-315c-11ea-80b1-6691f79b4c04.PNG"></img><br/>
-  <pre> ~/workspace 로 이동하였다. </pre>
+  <pre> ~/workspace 로 이동하였다. </pre><br>
   
   - **LS**<br>
   파일 내역 출력<br>
@@ -58,7 +58,7 @@ Courses
        -n: UID, GID 출력 
        -R: 하위 경로와 모든 파일 나열</pre>
   <img src="https://user-images.githubusercontent.com/48443734/71872085-af8a8880-315e-11ea-9f8e-c26bdee9cb30.PNG"></img><br/>
-  <pre> /workspace 폴더의 모든 파일과 디렉토리를 자세히 출력 </pre>
+  <pre> /workspace 폴더의 모든 파일과 디렉토리를 자세히 출력 </pre><br>
   
   - **CP**<br>
   파일, 디렉토리 복사<br>
@@ -68,7 +68,7 @@ Courses
        -v: 복사 진행 상황 출력 
        -s: 링크 정보 유지하여 복사 </pre>
   <img src="https://user-images.githubusercontent.com/48443734/71872088-b0bbb580-315e-11ea-9525-c601a8fb11f2.PNG"></img><br/>
-  <pre> test1.txt 파일의 내용을 복사하여 test2.txt 파일을 생성함 </pre>
+  <pre> test1.txt 파일의 내용을 복사하여 test2.txt 파일을 생성함 </pre><br>
   
     - **MKDIR**<br>
   디렉토리 생성<br>
@@ -78,7 +78,7 @@ Courses
        --help: 도움말 
        --version: 버전 표시 </pre>
   <img src="https://user-images.githubusercontent.com/48443734/71874138-7fde7f00-3164-11ea-8d77-0385432db14c.PNG"></img><br/>
-  <pre> mv_test 디렉토리가 생성된 것을 확인 </pre>
+  <pre> mv_test 디렉토리가 생성된 것을 확인 </pre><br>
   
   - **MV**<br>
   파일, 디렉토리 이동<br>
@@ -89,7 +89,7 @@ Courses
        -v: 이동 진행 상태 출력 
        -b: 대상 파일이 이미 있어 백업 파일 생성  </pre>
   <img src="https://user-images.githubusercontent.com/48443734/71874141-810fac00-3164-11ea-975b-baeac4c0fbe8.PNG"></img><br/>
-  <pre> test1.txt를 mv_test 디렉토리로 이동한 것을 확인 </pre>
+  <pre> test1.txt를 mv_test 디렉토리로 이동한 것을 확인 </pre><br>
   
   - **RM**<br>
   파일, 디렉토리 삭제<br>
@@ -98,7 +98,7 @@ Courses
        -r: 디렉토리 삭제 시 하위 경로와 파일 삭제 
        -v: 파일 삭제 정보를 자세히 보여줌 </pre>
   <img src="https://user-images.githubusercontent.com/48443734/71874251-cb912880-3164-11ea-885d-0a566b4e9b48.PNG"></img><br/>
-  <pre> mv_test 디렉토리가 삭제된 것을 확인 </pre>
+  <pre> mv_test 디렉토리가 삭제된 것을 확인 </pre><br>
   
   - **CAT**<br>
   텍스트 파일 내용 출력<br>
@@ -107,25 +107,25 @@ Courses
        >>: 기존 파일 내용 추가 </pre>
   <img src="https://user-images.githubusercontent.com/48443734/71874592-abae3480-3165-11ea-9f50-1190b9799d2b.PNG"></img><br/>
   <img src="https://user-images.githubusercontent.com/48443734/71874598-ae108e80-3165-11ea-8c9b-ff04354e1433.PNG"></img><br/>
-  <pre> test2.txt 파일에 내용이 출력된 것을  </pre>
+  <pre> test2.txt 파일에 내용이 출력된 것을  </pre><br>
   
   - **TOUCH**<br>
   파일 생성 및 시간 정보 변경<br>
   <pre>$ touch {옵션} {파일이름}
        -r: 시간 동기화
-       -t: 지정 시간으로 변경 </pre>
+       -t: 지정 시간으로 변경 </pre><br>
   
   - **HEAD**<br>
   파일 내용 중 처음부터 10줄 출력<br>
-  <pre>$ head {파일이름} </pre>
+  <pre>$ head {파일이름} </pre><br>
   
   - **TAIL**<br>
   파일 내용중 마지막부터 10줄 출력<br>
-  <pre>$ tail {파일이름} </pre>
+  <pre>$ tail {파일이름} </pre><br>
   
   - **FILE**<br>
   파일 종류 확인<br>
-  <pre>$ file {파일이름} </pre>
+  <pre>$ file {파일이름} </pre><br>
   
   - **CHOWN**<br>
   chown(change the owner of a file) 파일의 소유권을 바꾸기 위해 사용<br>
@@ -136,7 +136,8 @@ Courses
     - chown {변경할유저이름:} – 소유자와 그룹 모두 동일한걸로 변경
     - chown {변경할유저이름:변경할그룹이름} – 소유자와 그룹을 서로 다른걸로 변경 </pre>
   <img src="https://user-images.githubusercontent.com/48443734/71878313-ad302a80-316e-11ea-95bb-b588dcc5ba66.PNG"></img><br/>
-  <per>빨간색 선 기준으로 왼쪽은 소유자, 오른쪽은 그룹</per>
+  <per>빨간색 선 기준으로 왼쪽은 소유자, 오른쪽은 그룹</per><br>
+  
   - **CHMOD**<br>
     - 파일의 권한을 변경
     - 8진수 형태와 심볼릭 형태로 사용 가능
@@ -185,7 +186,7 @@ Courses
   r : 읽기 권한
   w : 쓰기 권한
   x : 실행 권한
-  
+
 - **검색**
   - **FIND**<br>
   파일 찾기<br>
@@ -213,7 +214,7 @@ Courses
        -c: 패턴이 일치하는 행의 수를 출력
        -v: 지정한 패턴과 일치하지 않는 행만 출력
        -l: 패턴이 포함된 파일의 이름을 출력
-       -w: 패턴이 전체 단어와 일치하는 행만 출력</pre>
+       -w: 패턴이 전체 단어와 일치하는 행만 출력</pre><br>
        
 - **프로세스**      
   - **PS**<br>
@@ -246,14 +247,14 @@ Courses
   
 ### Git & Github
 ### Git이란?
-리누스 토발즈에 의해 개발된 Git은 컴퓨터 파일의 변경사항을 추적하고 여러 명의 사용자들 간에 해당 파일들의 작업을 조율하기 위한  **분산 버전 관리 시스템**이다. 또한 소프트웨어를 개발하는 기업의 핵심 자산인 소스코드를 효율적으로 관리할 수 있게 해주는 **형상 관리 도구**라고도 한다. Git은 무료이며 공개소프트웨어이다.
+리누스 토발즈에 의해 개발된 Git은 컴퓨터 파일의 변경사항을 추적하고 여러 명의 사용자들 간에 해당 파일들의 작업을 조율하기 위한  **분산 버전 관리 시스템**이다. 또한 소프트웨어를 개발하는 기업의 핵심 자산인 소스코드를 효율적으로 관리할 수 있게 해주는 **형상 관리 도구**라고도 한다. Git은 무료이며 공개소프트웨어이다.<br>
 
 ### Git을 사용해야하는 이유
 1. 소스코드를 주고 받을 필요 없이, 같은 파일을 **여러 명이 동시에 작업하는 병렬 개발이 가능**하다.
 2. 분산 버전관리이기 때문에 인터넷이 연결되지 않은 곳에서도 개발을 진행할 수 있으며, 중앙 저장소가 날라가버려도 다시 **원상복구**할 수 있습니다.
 3. 다른 사람과 함께 일하는 경우, **여러명과 함께 코드 공유를 공유**하고 변경사항에 대해 충돌하는 일이 발생하지 않는다.
 4. 팀 프로젝트가 아닌, 개인 프로젝트일지라도 Git을 통해 버전 관리를 하면 **체계적인 개발이 가능**하다.
-5. 개발 환경에서 **실수를 할 수 있기 때문**이다.
+5. 개발 환경에서 **실수를 할 수 있기 때문**이다.<br>
 
 ### Git 명령어 정리
 - **환경 설정**<br>
