@@ -148,7 +148,7 @@ Courses
            -c : 권한 변경 파일내용을 출력<br></pre>
   <img src="https://user-images.githubusercontent.com/48443734/71878246-7e19b900-316e-11ea-9046-7167cbb3fbbe.PNG"></img><br/>
   <per>d는 디렉토리, -는 파일<br>
-  3칸 기준으로<br>
+  3칸 기준으로<br> 
   첫번째는 owner
   두번째는 group
   세번째는 other</per>
