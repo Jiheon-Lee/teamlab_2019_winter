@@ -261,6 +261,19 @@ Courses
   
     Client 컴퓨터로 server 컴퓨터 원격제어하기<br>
   <pre>$ ssh {서버사용자이름}@{ip address}</pre><br>
+  
+  - **SSH-Keygen**<br>
+  rsa라는 암호화 방식으로 키를 생성<br>
+  <pre>$ ssh-keygen -t rsa</pre>
+  
+    키를 확인<br>
+  <pre>$ ls -al ~/.ssh/</pre>
+
+파일|설명
+----|-----
+id_rsa|private key, 절대로 타인에게 노출되면 안된다.
+id_rsa.pub|public key, 접속하려는 리모트 머신의 authorized_keys에 입력한다.
+authorized_keys|리모트 머신의 .ssh 디렉토리 아래에 위치하면서 id_rsa.pub 키의 값을 저장한다.<br>
 
 ### Git & Github
 ### Git이란?
