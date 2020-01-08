@@ -218,7 +218,7 @@ Courses
        
 - **프로세스**      
   - **PS**<br>
-  ps(process status) 시스템에서 현재 수행되고 있는 프로세를 확인<br>
+  ps(process status) 시스템에서 현재 수행되고 있는 프로세스를 확인<br>
   <pre>$ ps aux
        -e: 모든 프로세스
        -f: full format으로 보여줌
