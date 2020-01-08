@@ -250,6 +250,18 @@ Courses
   $ sudo service {데몬이름} stop # 데몬 중지
   $ sudo service {데몬이름} restart # 데몬 재시작</pre><br>
 
+- **SSH(원격제어)**      
+  - **SSH**<br>
+  SSH server 설치 (sever 컴퓨터, client 컴퓨터)<br>
+  <pre>$ sudo apt-get install openssh-server
+  $ sudo apt-get install openssh-client</pre>
+  
+    SSH server 실행<br>
+  <pre>$ sudo service ssh start</pre>
+  
+    Client 컴퓨터로 server 컴퓨터 원격제어하기<br>
+  <pre>$ ssh {서버사용자이름}@{ip address}</pre><br>
+
 ### Git & Github
 ### Git이란?
 리누스 토발즈에 의해 개발된 Git은 컴퓨터 파일의 변경사항을 추적하고 여러 명의 사용자들 간에 해당 파일들의 작업을 조율하기 위한  **분산 버전 관리 시스템**이다. 또한 소프트웨어를 개발하는 기업의 핵심 자산인 소스코드를 효율적으로 관리할 수 있게 해주는 **형상 관리 도구**라고도 한다. Git은 무료이며 공개소프트웨어이다.<br>
