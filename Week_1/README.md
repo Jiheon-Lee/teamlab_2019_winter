@@ -339,7 +339,6 @@ staging area에 올라가 있는 파일들을 commit
   원격저장소 만들 때는 수정이 불가한 저장소의 역할만 하는 디렉토리를 만들어야 한다.
   <pre>$ git init --bare {디렉토리명}</pre>
   현재 저장소에 원격저장소를 add(연결)한다. 경로 앞에 origin이라 하면 경로는 origin을 가르킴, 원격저장소의 기본 이름은 origin
-  이전에 어떠한 작업을 했는지 조회
   <pre>$ git remote add origin {경로}</pre>
   추가한 원격저장소의 목록을 확인
   <pre>$ git remote
