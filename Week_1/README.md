@@ -348,5 +348,7 @@ staging area에 올라가 있는 파일들을 commit
   <pre>$ git remote remove origin</pre>
   현재 브랜치를 연결시킨 지역저장소에서 원격저장소에 푸쉬, 즉 업로드
   <pre>$ git push origin</pre>
+  원격저장소의 파일들을 지역저장소로 가져옴
+  <pre>$ git pull</pre>
   원격저장소의 파일들을 디렉토리를 생성하여 안에 다운로드
   <pre>$ git clone {원격저장소 주소} {디렉토리명}</pre>
