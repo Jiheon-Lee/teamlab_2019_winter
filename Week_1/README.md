@@ -34,12 +34,12 @@ Courses
 1. 다른 운영체제를 사용해야 하는 경우(Windows에서 Linux)
 2. 독립된 작업공간이 필요한 경우(바이러스 회피, 백업)<br>
 
-## 가상머신(VirtualBox)을 이용하여 리눅스 실습 환경 만들기
-> https://teamlab.github.io/jekyllDecent/blog/tutorials/가상머신(VirtualBox)을-이용하여-리눅스-실습-환경-만들기<br>
-> 리눅스 실습 환경 포스팅 by Jiheon-Lee
-
 ### VirtualBox
 오라클에서 만든 가상머신 솔루션이다. 오픈소스이며 무료이다.<br>
+
+## 가상머신(VirtualBox)을 이용하여 리눅스 실습 환경 만들기
+> https://teamlab.github.io/jekyllDecent/blog/tutorials/가상머신(VirtualBox)을-이용하여-리눅스-실습-환경-만들기<br>
+> TEAMLAB Blog 리눅스 실습 환경 포스팅 by Jiheon-Lee
 
 ### VirtualBox 설치
 구글에서 VirtualBox를 검색하여 VirtualBox 홈페이지를 선택합니다.<br>
