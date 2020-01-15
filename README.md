@@ -12,7 +12,7 @@ Melon Popular Music/Recommend Service로 MPM/RS는 Melon의 실시간으로 인�
 -------------------
 일정|산출물|기간
 ----|----|----
-Linux Bootcamp,Git & Github|Github 페이지 형성 후 README.md에 프로젝트 명과 기간 등 필요 내용 추가하기|2020.01.02 ~ 2020.01.08
+[Linux Bootcamp, Git & Github](https://github.com/Jiheon-Lee/teamlab_2019_winter/tree/master/Week_1)|Github 페이지 형성 후 README.md에 프로젝트 명과 기간 등 필요 내용 추가하기|2020.01.02 ~ 2020.01.08
 Crawing with Python|프로젝트에 필요한 데이터 수집을 위한 크롤링코드를 작성하고 데이터는 Excel, csv 파일 등등으로 저장하기|2020.01.09 ~ 2020.01.15
 Web Bootcamp|html, css등을 이용해 웹 Front-end 제작|2020.01.16 ~ 2020.01.22
 Database Bootcamp|Mysql을 이용해 데이터를 Database화|2020.01.23 ~ 2020.01.29
