@@ -41,11 +41,17 @@ melon_df.to_csv('melon_100.csv', mode='w', encoding='utf-8-sig',
                 header=True, index=False)
 ```
 
-- **Melon DataFrame**<br><br>
+<br>
+
+- **Melon DataFrame**<br>
 ![Melon_DataFrame](https://user-images.githubusercontent.com/48443734/72450063-08ac8900-37fd-11ea-9c48-a3ce058ac533.PNG)
 
-- **Melon CSV**<br><br>
+<br>
+
+- **Melon CSV**<br>
 ![Melon CSV](https://user-images.githubusercontent.com/48443734/72450244-5a551380-37fd-11ea-990e-8f24cb088bf7.PNG)
+
+<br>
 
 ## 네이버(Naver) 연극 월/일/주간/주말 별 연극
 - **Crawling with python Code**<br>
@@ -108,8 +114,12 @@ theater_df.to_csv('theater_df.csv', mode='w', encoding='utf-8-sig',
 print('웹 크롤링이 완료되었습니다.')
 ```
 
-- **Theater DataFrame**<br><br>
+<br>
+
+- **Theater DataFrame**<br>
 ![Theater DataFrame](https://user-images.githubusercontent.com/48443734/72451373-2975de00-37ff-11ea-9170-905ee73c14e7.PNG)
 
-- **Theater CSV**<br><br>
+<br>
+
+- **Theater CSV**<br>
 ![Theater CSV](https://user-images.githubusercontent.com/48443734/72451415-3e527180-37ff-11ea-9644-279c078a515a.PNG)
