@@ -1,7 +1,7 @@
 2주차 Web Bootcamp
 =========================
 
-**목표** : 자신의 프로젝트에 필요한 html을 제작해보도록 한다. 웹 front-end 즉, 겉모습만 만들면 된다. html, css, JavaScript, bootstrap 등을 이용해서 만들도록 하고 제작한 사이트에 대한 코드는 github에 업로드 하도록 한다. 2020.01.16 ~ 2020.01.22
+**목표** : 자신의 프로젝트에 필요한 html을 제작해보도록 한다. 웹 front-end 즉, 겉모습을 만든다. html, css, JavaScript, bootstrap 등을 이용해서 만들도록 하고 제작한 웹사이트에 대한 코드는 github에 업로드 한다. 2020.01.16 ~ 2020.01.22
 
 Courses
 -------
