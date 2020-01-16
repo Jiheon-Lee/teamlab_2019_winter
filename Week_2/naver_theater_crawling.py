@@ -36,8 +36,6 @@ try:    # 정상 처리
         driver.find_element_by_xpath("//a[@class='btn_page_next _btnNext on']").click()
         time.sleep(2)
 
-    driver.quit()
-
 except TimeoutException:    # 예외 처리
     print('해당 페이지에 연극 정보가 존재하지 않습니다.')
 
