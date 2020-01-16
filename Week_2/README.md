@@ -53,7 +53,7 @@ melon_df.to_csv('melon_100.csv', mode='w', encoding='utf-8-sig',
 
 <br>
 
-## 네이버(Naver) 연극 월/일/주간/주말 별 연극
+## 네이버(Naver) 월/일/주간/주말 별 연극
 - **Crawling with python Code**<br>
 
 ```python
