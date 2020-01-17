@@ -97,19 +97,22 @@ try:    # 정상 처리
         driver.find_element_by_xpath("//a[@class='btn_page_next _btnNext on']").click()
         time.sleep(2)
 
-    driver.quit()
-
 except TimeoutException:    # 예외 처리
     print('해당 페이지에 연극 정보가 존재하지 않습니다.')
 
 finally:    # 정상, 예외 둘 중 하나여도 반드시 실행
     driver.quit()
 
+for i in range(len(theater_list)):
+    theater_list[i].append(theater_list[i][1].split('~')[0])
+    theater_list[i].append(theater_list[i][1].split('~')[1])
+
 theater_df = pd.DataFrame(theater_list,
-                          columns=['연극명', '기간', '장소'])
+                          columns=['연극명', '기간', '장소', '개막일', '폐막일'])
 theater_df.index = theater_df.index + 1    # 인덱스 초기값 1로 변경
+theater_df['개막일'] = pd.to_datetime(theater_df['개막일'], format='%y.%m.%d.')
 theater_df.to_csv('theater_df.csv', mode='w', encoding='utf-8-sig',
-                  header=True, index=True)
+                   header=True, index=True)
 
 print('웹 크롤링이 완료되었습니다.')
 ```
@@ -117,9 +120,9 @@ print('웹 크롤링이 완료되었습니다.')
 <br>
 
 - **Theater DataFrame**<br>
-![Theater DataFrame](https://user-images.githubusercontent.com/48443734/72451373-2975de00-37ff-11ea-9170-905ee73c14e7.PNG)
+![Theater DataFrame](https://user-images.githubusercontent.com/48443734/72533754-04de3c80-38b9-11ea-9141-978fed35df33.PNG)
 
 <br>
 
 - **Theater CSV**<br>
-![Theater CSV](https://user-images.githubusercontent.com/48443734/72451415-3e527180-37ff-11ea-9644-279c078a515a.PNG)
+![Theater CSV](https://user-images.githubusercontent.com/48443734/72533950-5dadd500-38b9-11ea-98d8-27277bbd220d.PNG)
