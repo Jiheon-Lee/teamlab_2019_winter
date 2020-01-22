@@ -77,7 +77,7 @@ for i in range(len(theater_list)):
         theater_list[i].append('False')
 
 theater_df = pd.DataFrame(theater_list,
-                          columns=['연극명', '기간', '장소', '개막일', '폐막일'])
+                          columns=['연극명', '기간', '장소', '개막일', '폐막일', '오픈런'])
 theater_df.index = theater_df.index + 1    # 인덱스 초기값 1로 변경
 theater_df['개막일'] = pd.to_datetime(theater_df['개막일'], format='%y.%m.%d.')
 theater_df['폐막일'] = pd.to_datetime(theater_df['폐막일'], format='%y.%m.%d.')
