@@ -11,49 +11,11 @@ Courses
 - [업무 자동화를 위한 파이썬 pyautogui, beautifulsoup 크롤링 기초](https://www.inflearn.com/course/%EC%97%85%EB%AC%B4%EC%9E%90%EB%8F%99%ED%99%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC-pyautogui-%ED%81%AC%EB%A1%A4%EB%A7%81%EA%B8%B0%EC%B4%88#), 인프런, 2019
 - [현존 최강 크롤링 기술: Scrapy와 Selenium 정복](https://www.inflearn.com/course/Crawling-Scrapy-Selenium#), 인프런, 2019
 
-## 멜론(Melon) 실시간 인기차트 TOP 100
-- **Crawling with python Code**<br>
-
-```python
-import requests
-from bs4 import BeautifulSoup
-import pandas as pd
-
-
-hdr = {'User-Agent': 'Mozilla/5.0'}
-url = 'https://www.melon.com/chart/index.htm'
-req = requests.get(url, headers=hdr)
-soup = BeautifulSoup(req.content, 'html.parser')
-lst_data = soup.select('.lst50, .lst100')
-
-melon_lst = []
-for i in lst_data:
-    temp = []
-    temp.append(i.select_one('.rank').text)
-    temp.append(i.select_one('.rank01').a.text)
-    temp.append(i.select_one('.rank02').a.text)
-    temp.append(i.select_one('.rank03').a.text)
-    melon_lst.append(temp)
-
-melon_df = pd.DataFrame(melon_lst,
-                        columns=['순위', '노래명', '아티스트', '앨범명'])
-melon_df.to_csv('melon_100.csv', mode='w', encoding='utf-8-sig',
-                header=True, index=False)
-```
-
 <br>
 
-- **Melon DataFrame**<br>
-![Melon_DataFrame](https://user-images.githubusercontent.com/48443734/72587362-58439f80-3938-11ea-8ee7-644525c76563.png)
-
-<br>
-
-- **Melon CSV**<br>
-![Melon CSV](https://user-images.githubusercontent.com/48443734/72587352-4bbf4700-3938-11ea-9a58-0019fd5e83da.PNG)
-
-<br>
-
-## 네이버(Naver) 월/일/주간/주말 별 연극
+## 네이버(Naver) 월/일/주간/주말 별 연극 크롤링
+> https://teamlab.github.io/jekyllDecent/blog/crawling%20with%20python/Selenium으로-네이버-연극-데이터-크롤링하기-with-Python<br>
+> TEAMLAB Blog 네이버 연극 크롤링 포스팅 by Jiheon-Lee
 - **Crawling with python Code**<br>
 
 ```python
@@ -126,3 +88,45 @@ print('웹 크롤링이 완료되었습니다.')
 
 - **Theater CSV**<br>
 ![Theater CSV](https://user-images.githubusercontent.com/48443734/72586447-2977fa00-3935-11ea-8092-82aff32730f6.PNG)
+
+<br>
+
+## 멜론(Melon) 실시간 인기차트 TOP 100 크롤링
+- **Crawling with python Code**<br>
+
+```python
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+
+
+hdr = {'User-Agent': 'Mozilla/5.0'}
+url = 'https://www.melon.com/chart/index.htm'
+req = requests.get(url, headers=hdr)
+soup = BeautifulSoup(req.content, 'html.parser')
+lst_data = soup.select('.lst50, .lst100')
+
+melon_lst = []
+for i in lst_data:
+    temp = []
+    temp.append(i.select_one('.rank').text)
+    temp.append(i.select_one('.rank01').a.text)
+    temp.append(i.select_one('.rank02').a.text)
+    temp.append(i.select_one('.rank03').a.text)
+    melon_lst.append(temp)
+
+melon_df = pd.DataFrame(melon_lst,
+                        columns=['순위', '노래명', '아티스트', '앨범명'])
+melon_df.to_csv('melon_100.csv', mode='w', encoding='utf-8-sig',
+                header=True, index=False)
+```
+
+<br>
+
+- **Melon DataFrame**<br>
+![Melon_DataFrame](https://user-images.githubusercontent.com/48443734/72587362-58439f80-3938-11ea-8ee7-644525c76563.png)
+
+<br>
+
+- **Melon CSV**<br>
+![Melon CSV](https://user-images.githubusercontent.com/48443734/72587352-4bbf4700-3938-11ea-9a58-0019fd5e83da.PNG)
