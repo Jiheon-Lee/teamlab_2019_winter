@@ -95,7 +95,7 @@ print('웹 크롤링이 완료되었습니다.')
 <br>
 
 - **Theater CSV**<br>
-![Theater CSV](https://user-images.githubusercontent.com/48443734/72586447-2977fa00-3935-11ea-8092-82aff32730f6.PNG)
+![Theater CSV](https://user-images.githubusercontent.com/48443734/72878495-6598c980-3d3e-11ea-8628-0617b17d7467.PNG)
 
 <br>
 
