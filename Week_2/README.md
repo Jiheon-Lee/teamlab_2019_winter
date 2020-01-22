@@ -90,7 +90,7 @@ print('웹 크롤링이 완료되었습니다.')
 <br>
 
 - **Theater DataFrame**<br>
-![Theater DataFrame](https://user-images.githubusercontent.com/48443734/72586367-cab28080-3934-11ea-8e2f-a7df9b4ee6b1.png)
+![Theater DataFrame](https://user-images.githubusercontent.com/48443734/72877924-48afc680-3d3d-11ea-8e88-828df67bf9a2.png)
 
 <br>
 
