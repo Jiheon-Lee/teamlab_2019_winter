@@ -91,7 +91,7 @@ print('웹 크롤링이 완료되었습니다.')
 
 <br>
 
-## 멜론(Melon) 실시간 인기차트 TOP 100 크롤링
+## 멜론(Melon) 실시간 인기차트 TOP 100 크롤링 (학습용)
 - **Crawling with python Code**<br>
 
 ```python
