@@ -69,10 +69,18 @@ for i in range(len(theater_list)):
     theater_list[i].append(theater_list[i][1].split('~')[0])
     theater_list[i].append(theater_list[i][1].split('~')[1])
 
+for i in range(len(theater_list)):
+    if theater_list[i][4] == '오픈런':
+        theater_list[i][4] = '50.01.01.'
+        theater_list[i].append('True')
+    else:
+        theater_list[i].append('False')
+
 theater_df = pd.DataFrame(theater_list,
                           columns=['연극명', '기간', '장소', '개막일', '폐막일'])
 theater_df.index = theater_df.index + 1    # 인덱스 초기값 1로 변경
 theater_df['개막일'] = pd.to_datetime(theater_df['개막일'], format='%y.%m.%d.')
+theater_df['폐막일'] = pd.to_datetime(theater_df['폐막일'], format='%y.%m.%d.')
 theater_df.to_csv('theater_df.csv', mode='w', encoding='utf-8-sig',
                    header=True, index=True)
 
