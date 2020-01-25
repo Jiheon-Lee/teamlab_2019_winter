@@ -1,4 +1,4 @@
-2주차 Web Bootcamp
+3주차 Web Bootcamp
 =========================
 
 **목표** : 자신의 프로젝트에 필요한 html을 제작해보도록 한다. 웹 front-end 즉, 겉모습을 만든다. html, css, JavaScript, bootstrap 등을 이용해서 만들도록 하고 제작한 웹사이트에 대한 코드는 github에 업로드 한다. 2020.01.16 ~ 2020.01.22
@@ -13,6 +13,14 @@ Courses
 - [Bootstrap 4 & 3 Framework Tutorial](https://www.inflearn.com/course/bootstrap-2#), 인프런, 2018
 - [나만의 포트폴리오 웹페이지 만들기](https://www.inflearn.com/course/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4#), 인프런, 2019
 - [퍼블리셔 취업을 위해 제대로 배워보는 html과 css, 그리고 웹표준](https://www.inflearn.com/course/html-css-webazit), 인프런, 2018
+
+웹 Front-end 제작
+-----------------
+https://jiheon-lee.github.io/Web_Theater_Information_Guide/ <br>(Github의 pages 기능으로 웹호스팅)
+
+![index](https://user-images.githubusercontent.com/48443734/73118522-a724b100-3f98-11ea-917b-df5f9773262b.PNG)
+![index_under](https://user-images.githubusercontent.com/48443734/73118523-a7bd4780-3f98-11ea-90d5-97f1392a6202.PNG)
+![theater](https://user-images.githubusercontent.com/48443734/73118524-a7bd4780-3f98-11ea-8b8c-5d909d14874c.PNG)
 
 학습 내용 정리
 -------------
