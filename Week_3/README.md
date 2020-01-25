@@ -16,7 +16,7 @@ Courses
 
 웹 Front-end 제작
 -----------------
-https://jiheon-lee.github.io/Web_Theater_Information_Guide/ <br>Github의 pages 기능으로 웹호스팅)
+https://jiheon-lee.github.io/Web_Theater_Information_Guide/ <br>(Github의 pages 기능으로 웹호스팅)
 
 ![index](https://user-images.githubusercontent.com/48443734/73118522-a724b100-3f98-11ea-917b-df5f9773262b.PNG)
 ![index_under](https://user-images.githubusercontent.com/48443734/73118523-a7bd4780-3f98-11ea-90d5-97f1392a6202.PNG)
