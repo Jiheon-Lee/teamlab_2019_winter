@@ -156,6 +156,11 @@ print('웹 크롤링이 완료되었습니다.')
 
 <br>
 
+- **Shop DataFrame**<br>
+![Theater DataFrame](https://user-images.githubusercontent.com/48443734/73162389-061d2e00-4131-11ea-8cfc-e945bce21f35.png)
+
+<br>
+
 User의 최저가 연극 티켓 정보 요청 크롤링
 ```python
 from urllib.parse import quote_plus    # 한글 텍스트를 퍼센트 인코딩으로 변환
@@ -198,11 +203,6 @@ shop_df.to_csv('req_shop_df.csv', mode='a', encoding='utf-8-sig',
 
 print('웹 크롤링이 완료되었습니다.')
 ```
-
-<br>
-
-- **Shop DataFrame**<br>
-![Theater DataFrame](https://user-images.githubusercontent.com/48443734/73162389-061d2e00-4131-11ea-8cfc-e945bce21f35.png))
 
 <br>
 
