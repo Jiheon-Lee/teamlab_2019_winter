@@ -18,7 +18,7 @@ CREATE DATABASE tig;
 USE tig;
 
 CREATE TABLE theaters(
-	TheaterID int not null auto_increment,
+    TheaterID int not null auto_increment,
     TheaterName int not null,
     Period varchar(50) not null,
     Place varchar(50) not null,
@@ -29,12 +29,12 @@ CREATE TABLE theaters(
 );
 
 CREATE TABLE theaters_details(
-	TheaterID int not null,
+    TheaterID int not null,
     ViewingAge varchar(50) null,
     PerformanceTime varchar(50) null,
     Descriptions varchar(255) null, 
     Price int null,
-	Image blob null,
+    Image blob null,
     ShopTitle varchar(50) null,
     ShopLink varchar(255) null,
     foreign key(TheaterID)
@@ -42,31 +42,31 @@ CREATE TABLE theaters_details(
 );
 
 CREATE TABLE theaters_ranking(
-	TheaterID int not null,
-	RankingType enum('Daily', 'Monthly', 'Weekly', 'Weekend') not null,
+    TheaterID int not null,
+    RankingType enum('Daily', 'Monthly', 'Weekly', 'Weekend') not null,
     Ranking int not null,
     foreign key(TheaterID)
       references theaters(TheaterID) on delete cascade on update cascade
 );
 
 CREATE TABLE users(
-	UserID int not null auto_increment,
-	UserName varchar(50) not null,
+    UserID int not null auto_increment,
+    UserName varchar(50) not null,
     primary key(UserID)
 );
 
 CREATE TABLE comments(
-	CommentID int not null auto_increment,
+    CommentID int not null auto_increment,
     UserID int not null,
-	TheaterID int not null,
+    TheaterID int not null,
     Content varchar(255) null,
     Reply varchar(255) null,
-	Likes int null,
+    Likes int null,
     Image blob null,
     primary key(CommentID),
     foreign key(UserID)
       references users(UserID) on delete cascade on update cascade,
-	foreign key(TheaterID)
+    foreign key(TheaterID)
       references theaters(TheaterID) on delete cascade on update cascade
 );
 
@@ -84,4 +84,5 @@ CREATE TABLE request_info(
 <br>
 
 - **Database ERD**
+
 ![tig_ERD](https://user-images.githubusercontent.com/48443734/73184993-a474b800-4160-11ea-853f-eec0962a6e2c.png)
