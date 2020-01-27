@@ -20,7 +20,7 @@ Courses
 ![Naver_theater](https://user-images.githubusercontent.com/48443734/72893751-32196780-3d5d-11ea-9ec3-6b5fa24a3409.PNG)
 
 - **Crawling with python Code**<br>
-
+월/일, 주간, 주말 별 연극 정보 + 연극 이미지
 ```python
 from urllib.parse import quote_plus    # 한글 텍스트를 퍼센트 인코딩으로 변환
 from selenium import webdriver    # 라이브러리에서 사용하는 모듈만 호출
@@ -31,9 +31,9 @@ from selenium.common.exceptions import TimeoutException    # 태그가 없는 �
 import time
 import pandas as pd
 
-
-user_input = quote_plus(input('''-월--일, -월, 이번주, 이번주말 중 선택하여 입력해주세요.
-                                 (-은 숫자 입력, 이번년도만 가능) : '''))
+input = input('''-월--일, -월, 이번주, 이번주말 중 선택하여 입력해주세요.
+                                 (-은 숫자 입력, 이번년도만 가능) : ''')
+user_input = quote_plus(input)
 
 url = f'https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&query={user_input}%20%EC%97%B0%EA%B7%B9%20%EA%B3%B5%EC%97%B0'
 chromedriver = 'C:/Users/LeeJiheon/Desktop/가천대학교/TEAMLAB/2019_winter_study/2주차/crawling/chromedriver'
@@ -52,13 +52,19 @@ try:    # 정상 처리
     )    # 해당 태그 존재 여부를 확인하기까지 3초 기다림
     theater_list = []
     pageNum = int(driver.find_element_by_class_name('_totalCount').text)
-
+    count = 0
+    
     for i in range(1, pageNum):
         theater_data = driver.find_elements_by_class_name('list_title')
+        img_data = driver.find_elements_by_class_name('list_thumb')
 
         for k in theater_data:
             theater_list.append(k.text.split('\n'))
-
+        
+        for j in img_data:
+            count += 1
+            j.screenshot(f'img/{count}.png')
+        
         driver.find_element_by_xpath("//a[@class='btn_page_next _btnNext on']").click()
         time.sleep(2)
 
@@ -84,7 +90,7 @@ theater_df = pd.DataFrame(theater_list,
 theater_df.index = theater_df.index + 1    # 인덱스 초기값 1로 변경
 theater_df['개막일'] = pd.to_datetime(theater_df['개막일'], format='%y.%m.%d.')
 theater_df['폐막일'] = pd.to_datetime(theater_df['폐막일'], format='%y.%m.%d.')
-theater_df.to_csv('theater_df.csv', mode='w', encoding='utf-8-sig',
+theater_df.to_csv(f'theater_{input}_df.csv', mode='w', encoding='utf-8-sig',
                    header=True, index=True)
 
 print('웹 크롤링이 완료되었습니다.')
@@ -99,6 +105,104 @@ print('웹 크롤링이 완료되었습니다.')
 
 - **Theater CSV**<br>
 ![Theater CSV](https://user-images.githubusercontent.com/48443734/72878495-6598c980-3d3e-11ea-8628-0617b17d7467.PNG)
+
+<br>
+
+- **Theater IMG**<br>
+![Theater IMG](https://user-images.githubusercontent.com/48443734/73162391-074e5b00-4131-11ea-9efa-cd26b27ab940.PNG)
+
+<br>
+
+최저가 연극 관람 티켓 구매 정보 크롤링
+```python
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import time
+import pandas as pd
+
+theater_df = pd.read_csv('theater_df.csv')
+
+chromedriver = 'C:/Users/LeeJiheon/Desktop/가천대학교/TEAMLAB/2019_winter_study/2주차/crawling/chromedriver'
+driver = webdriver.Chrome(chromedriver)
+
+driver.get('https://shopping.naver.com')
+
+search_word = theater_df['연극명'].values.tolist()
+
+shop_list = []
+for i in search_word:
+    search_input = driver.find_element_by_xpath('//*[@id="autocompleteWrapper"]/input[1]')
+    search_input.clear()
+    search_input.send_keys(i)
+    search_click = driver.find_element_by_xpath('//*[@id="autocompleteWrapper"]/a[2]')
+    search_click.send_keys(Keys.RETURN)
+    elem = driver.find_element_by_xpath('//*[@id="_search_list"]/div[1]/ul/li[1]/div[2]/div/a')
+    purchase_name = elem.text
+    purchase_link = elem.get_attribute('href')
+    elem = driver.find_element_by_css_selector('#_search_list > div.search_list.basis > ul > li:nth-child(1) > div.info > span.price > em > span.num._price_reload')
+    purchase_price = elem.text
+    shop_list.append([purchase_name, purchase_price, purchase_link])
+    time.sleep(2)
+
+driver.quit()
+
+shop_df = pd.DataFrame(shop_list,
+                       columns=['Title', 'Price', 'link'])
+shop_df.to_csv('shop_df.csv', mode='w', encoding='utf-8-sig',
+               header=True, index=True)
+               
+print('웹 크롤링이 완료되었습니다.')
+```
+
+<br>
+
+User의 최저가 연극 티켓 정보 요청 크롤링
+```python
+from urllib.parse import quote_plus    # 한글 텍스트를 퍼센트 인코딩으로 변환
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait   # 해당 태그를 기다림
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException    # 태그가 없는 예외 처리
+import pandas as pd
+
+user_input = quote_plus(input('최저가 연극 관람 티켓을 찾을 검색어를 입력해주세요 : '))
+url = f'https://search.shopping.naver.com/search/all.nhn?query={user_input}&cat_id=&frm=NVSHATC'
+chromedriver = 'C:/Users/LeeJiheon/Desktop/가천대학교/TEAMLAB/2019_winter_study/2주차/crawling/chromedriver'
+driver = webdriver.Chrome(chromedriver)
+
+driver.get(url)
+
+try:    # 정상 처리
+    element = WebDriverWait(driver, 3).until(
+        EC.presence_of_element_located((By.CLASS_NAME, '_itemSection'))
+    )    # 해당 태그 존재 여부를 확인하기까지 3초 기다림
+    shop_list = []
+    elem = driver.find_element_by_xpath('//*[@id="_search_list"]/div[1]/ul/li[1]/div[2]/div/a')
+    purchase_name = elem.text
+    purchase_link = elem.get_attribute('href')
+    elem = driver.find_element_by_css_selector('#_search_list > div.search_list.basis > ul > li:nth-child(1) > div.info > span.price > em > span.num._price_reload')
+    purchase_price = elem.text
+    shop_list.append([purchase_name, purchase_price, purchase_link])
+
+except TimeoutException:    # 예외 처리
+    print('해당 페이지에 최저가 연극 관람 정보가 존재하지 않습니다.')
+
+finally:    # 정상, 예외 둘 중 하나여도 반드시 실행
+    driver.quit()
+
+shop_df = pd.DataFrame(shop_list,
+                       columns=['Title', 'Price', 'link'])
+shop_df.to_csv('req_shop_df.csv', mode='a', encoding='utf-8-sig',
+               header=True, index=True)
+
+print('웹 크롤링이 완료되었습니다.')
+```
+
+<br>
+
+- **Shop DataFrame**<br>
+![Theater DataFrame](https://user-images.githubusercontent.com/48443734/73162389-061d2e00-4131-11ea-8cfc-e945bce21f35.png))
 
 <br>
 
