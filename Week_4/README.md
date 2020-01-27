@@ -85,4 +85,6 @@ CREATE TABLE request_info(
 
 - **Database ERD**
 
+<br>
+
 ![tig_ERD](https://user-images.githubusercontent.com/48443734/73184993-a474b800-4160-11ea-853f-eec0962a6e2c.png)
