@@ -7,8 +7,10 @@ from selenium.common.exceptions import TimeoutException    # 태그가 없는 �
 import time
 import pandas as pd
 
-user_input = quote_plus(input('''-월--일, -월, 이번주, 이번주말 중 선택하여 입력해주세요.
-                                 (-은 숫자 입력, 이번년도만 가능) : '''))
+input = input('''-월--일, -월, 이번주, 이번주말 중 선택하여 입력해주세요.
+                                 (-은 숫자 입력, 이번년도만 가능) : ''')
+user_input = quote_plus(input)
+
 url = f'https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&query={user_input}%20%EC%97%B0%EA%B7%B9%20%EA%B3%B5%EC%97%B0'
 chromedriver = 'C:/Users/LeeJiheon/Desktop/가천대학교/TEAMLAB/2019_winter_study/2주차/crawling/chromedriver'
 
@@ -26,12 +28,18 @@ try:    # 정상 처리
     )    # 해당 태그 존재 여부를 확인하기까지 3초 기다림
     theater_list = []
     pageNum = int(driver.find_element_by_class_name('_totalCount').text)
+    count = 0
 
     for i in range(1, pageNum):
         theater_data = driver.find_elements_by_class_name('list_title')
+        img_data = driver.find_elements_by_class_name('list_thumb')
 
         for k in theater_data:
             theater_list.append(k.text.split('\n'))
+            
+        for j in img_data:
+            count += 1
+            j.screenshot(f'img/{count}.png')
 
         driver.find_element_by_xpath("//a[@class='btn_page_next _btnNext on']").click()
         time.sleep(2)
@@ -45,7 +53,7 @@ finally:    # 정상, 예외 둘 중 하나여도 반드시 실행
 theater_df = pd.DataFrame(theater_list,
                           columns=['연극명', '기간', '장소'])
 theater_df.index = theater_df.index + 1    # 인덱스 초기값 1로 변경
-theater_df.to_csv('theater_df.csv', mode='w', encoding='utf-8-sig',
+theater_df.to_csv(f'theater_{input}_df.csv', mode='w', encoding='utf-8-sig',
                   header=True, index=True)
 
 print('웹 크롤링이 완료되었습니다.')
