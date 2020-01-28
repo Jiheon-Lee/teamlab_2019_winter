@@ -209,9 +209,7 @@ print('웹 크롤링이 완료되었습니다.')
 Theater_Detail_Info 크롤링
 ```python
 from selenium import webdriver 
-from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-import time
 import pandas as pd
 
 theater_df = pd.read_csv('theater_df.csv')
