@@ -84,6 +84,14 @@ LOAD DATA LOCAL INFILE 'C:/Users/LeeJiheon/Desktop/theater_df.csv'
 INTO TABLE theaters
 CHARACTER SET utf8
 FIELDS TERMINATED BY ',';
+
+# 8.0 version error
+mysql -u root -p
+show global variables like 'local_infile';
+set global local_infile=true;
+
+# 똑같은 error가 뜬다면
+mysql --local-infile=1 -u root -p
 ```
 
 <br>
