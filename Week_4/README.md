@@ -79,6 +79,11 @@ CREATE TABLE request_info(
     foreign key(TheaterID)
       references theaters(TheaterID) on delete cascade on update cascade
 );
+
+LOAD DATA LOCAL INFILE 'C:/Users/LeeJiheon/Desktop/theater_df.csv'
+INTO TABLE theaters
+CHARACTER SET utf8
+FIELDS TERMINATED BY ',';
 ```
 
 <br>
