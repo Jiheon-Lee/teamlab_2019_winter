@@ -33,7 +33,7 @@ CREATE TABLE theaters_details(
     ViewingAge varchar(50) null,
     PerformanceTime varchar(50) null,
     Descriptions varchar(255) null, 
-    Price int null,
+    Price decimal(7) null,
     Image blob null,
     ShopTitle varchar(50) null,
     ShopLink varchar(255) null,
@@ -87,4 +87,4 @@ CREATE TABLE request_info(
 
 <br>
 
-![tig_database_ERD](https://user-images.githubusercontent.com/48443734/73250405-3381de80-41fa-11ea-9e25-21c0d0cc260d.png)
+![tig_database_ERD](https://user-images.githubusercontent.com/48443734/73250916-35986d00-41fb-11ea-83a1-df8c1450ed2c.png)
