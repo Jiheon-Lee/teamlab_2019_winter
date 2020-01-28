@@ -19,12 +19,12 @@ USE tig;
 
 CREATE TABLE theaters(
     TheaterID int not null auto_increment,
-    TheaterName int not null,
+    TheaterName varchar(50) not null,
     Period varchar(50) not null,
     Place varchar(50) not null,
     OpeningDay date not null,
     ClosingDay date null,
-    OpenRun boolean default null,
+    OpenRun varchar(50) default null,
     primary key(TheaterID)
 );
 
