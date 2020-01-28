@@ -87,4 +87,4 @@ CREATE TABLE request_info(
 
 <br>
 
-![tig_ERD](https://user-images.githubusercontent.com/48443734/73184993-a474b800-4160-11ea-853f-eec0962a6e2c.png)
+![tig_database_ERD](https://user-images.githubusercontent.com/48443734/73250405-3381de80-41fa-11ea-9e25-21c0d0cc260d.png)
