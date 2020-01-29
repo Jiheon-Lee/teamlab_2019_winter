@@ -102,7 +102,7 @@ mysql --local-infile=1 -u root -p
 
 <br>
 
-![tig_database_ERD](https://user-images.githubusercontent.com/48443734/73330677-c8d9ad00-42a4-11ea-861c-9b3afe560110.png)
+![tig_database_ERD](https://user-images.githubusercontent.com/48443734/73377954-35839480-4303-11ea-8d51-e2750ffd0d68.png)
 
 <br>
 
