@@ -103,3 +103,19 @@ mysql --local-infile=1 -u root -p
 <br>
 
 ![tig_database_ERD](https://user-images.githubusercontent.com/48443734/73330677-c8d9ad00-42a4-11ea-861c-9b3afe560110.png)
+
+<br>
+
+- **Theaters Table**
+
+<br>
+
+![Theaters Table](https://user-images.githubusercontent.com/48443734/73336131-5b357d00-42b4-11ea-8dc6-bf4536152db6.png)
+
+<br>
+
+- **Theaters_details**
+
+<br>
+
+![Theaters_details](https://user-images.githubusercontent.com/48443734/73336132-5bce1380-42b4-11ea-876b-cad2a2dad0c7.png)
