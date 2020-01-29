@@ -33,20 +33,10 @@ CREATE TABLE theaters_details(
     ViewingAge varchar(50) null,
     PerformanceTime varchar(50) null,
     Descriptions varchar(255) null, 
-    Price int null,
+    Price decimal(7) null,
     ShopTitle varchar(50) null,
     ShopLink longtext null,
     Image blob null,
-    foreign key(TheaterID)
-      references theaters(TheaterID) on delete cascade on update cascade
-);
-
-CREATE TABLE theaters_ranking(
-    TheaterID int not null,
-    DailyRank int null,
-    MonthlyRank int null,
-    WeeklyRank int null,
-    WeekendRank int null,
     foreign key(TheaterID)
       references theaters(TheaterID) on delete cascade on update cascade
 );
@@ -68,16 +58,6 @@ CREATE TABLE comments(
     primary key(CommentID),
     foreign key(UserID)
       references users(UserID) on delete cascade on update cascade,
-    foreign key(TheaterID)
-      references theaters(TheaterID) on delete cascade on update cascade
-);
-
-CREATE TABLE request_info(
-    CommentID int not null,
-    TheaterID int not null,
-    UpdateStatus boolean default null,
-    foreign key(CommentID)
-      references comments(CommentID) on delete cascade on update cascade,
     foreign key(TheaterID)
       references theaters(TheaterID) on delete cascade on update cascade
 );
