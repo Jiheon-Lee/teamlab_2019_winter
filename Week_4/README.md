@@ -33,18 +33,20 @@ CREATE TABLE theaters_details(
     ViewingAge varchar(50) null,
     PerformanceTime varchar(50) null,
     Descriptions varchar(255) null, 
-    Price decimal(7) null,
-    Image blob null,
+    Price int null,
     ShopTitle varchar(50) null,
-    ShopLink varchar(255) null,
+    ShopLink longtext null,
+    Image blob null,
     foreign key(TheaterID)
       references theaters(TheaterID) on delete cascade on update cascade
 );
 
 CREATE TABLE theaters_ranking(
     TheaterID int not null,
-    RankingType enum('Daily', 'Monthly', 'Weekly', 'Weekend') not null,
-    Ranking int not null,
+    DailyRank int null,
+    MonthlyRank int null,
+    WeeklyRank int null,
+    WeekendRank int null,
     foreign key(TheaterID)
       references theaters(TheaterID) on delete cascade on update cascade
 );
@@ -100,4 +102,4 @@ mysql --local-infile=1 -u root -p
 
 <br>
 
-![tig_database_ERD](https://user-images.githubusercontent.com/48443734/73250916-35986d00-41fb-11ea-83a1-df8c1450ed2c.png)
+![tig_database_ERD](https://user-images.githubusercontent.com/48443734/73330677-c8d9ad00-42a4-11ea-861c-9b3afe560110.png)
