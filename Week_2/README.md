@@ -31,9 +31,9 @@ from selenium.common.exceptions import TimeoutException    # 태그가 없는 �
 import time
 import pandas as pd
 
-input = input('''-월--일, -월, 이번주, 이번주말 중 선택하여 입력해주세요.
+_input = input('''-월--일, -월, 이번주, 이번주말 중 선택하여 입력해주세요.
                                  (-은 숫자 입력, 이번년도만 가능) : ''')
-user_input = quote_plus(input)
+user_input = quote_plus(_input)
 
 url = f'https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&query={user_input}%20%EC%97%B0%EA%B7%B9%20%EA%B3%B5%EC%97%B0'
 chromedriver = 'C:/Users/LeeJiheon/Desktop/가천대학교/TEAMLAB/2019_winter_study/2주차/crawling/chromedriver'
@@ -90,7 +90,7 @@ theater_df = pd.DataFrame(theater_list,
 theater_df.index = theater_df.index + 1    # 인덱스 초기값 1로 변경
 theater_df['개막일'] = pd.to_datetime(theater_df['개막일'], format='%y.%m.%d.')
 theater_df['폐막일'] = pd.to_datetime(theater_df['폐막일'], format='%y.%m.%d.')
-theater_df.to_csv(f'theater_{input}_df.csv', mode='w', encoding='utf-8-sig',
+theater_df.to_csv(f'theater_{_input}_df.csv', mode='w', encoding='utf-8-sig',
                    header=True, index=True)
 
 print('웹 크롤링이 완료되었습니다.')
