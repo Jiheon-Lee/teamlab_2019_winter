@@ -114,7 +114,7 @@ mysql --local-infile=1 -u root -p
 
 <br>
 
-- **Theaters_details**
+- **Theaters_details Table**
 
 <br>
 
