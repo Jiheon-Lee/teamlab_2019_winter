@@ -8,7 +8,9 @@ TEAMLAB 2019 Winter Study
 
 TIG 프로젝트
 -------------------
-Theater Information Guide로 TIG는 Naver 웹 사이트에서 연극에 대한 정보를 파이썬을 이용한 웹 크롤링으로 데이터를 수집하여 Database화 하고 여러 기능을 제공하는 시스템을 개발하여 웹 Front-end를 구현하고 Django로 Database와 Front-end를 연결시키고 만든 시스템을 AWS(아마존웹서비스)로 활용하는 것이 목표이다. 2020.01.02 ~ 2020.02.26
+Theater Information Guide로 TIG는 Naver 웹 사이트에서 연극에 대한 정보를 파이썬을 이용한 웹 크롤링으로 데이터를 수집하여 Database화 하고 여러 기능을 제공하는 시스템을 개발하여 웹 Front-end를 구현하고 Django로 Database와 Front-end를 연결시키고 만든 시스템을 AWS(아마존웹서비스)로 활용하는 것이 목표이다.<br>
+
+<div style="text-align: right"> 2020.01.02 ~ 2020.02.26 </div>
 
 <br>
 
