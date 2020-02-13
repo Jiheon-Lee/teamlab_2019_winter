@@ -2,13 +2,12 @@ TEAMLAB 2019 Winter Study
 =========================
 
 2019 Winter Course for Undergraduate Students를 통하여 주차별로 마일스톤 일정을 계획하고 학습한 내용을 문서화하여 정리 한 것입니다.
-또한 학습한 내용을 바탕으로 진행하는 프로젝트의 목표는 AWS 위에서 돌아가는 웹 크롤링 서비스를 웹으로 개발하는 것입니다.
 
 <br>
 
 TIG 프로젝트
 -------------------
-Theater Information Guide로 TIG는 Naver 웹 사이트에서 연극에 대한 정보를 파이썬을 이용한 웹 크롤링으로 데이터를 수집한 다음 MYSQL을 이용하여 Database화 하고 여러 기능을 제공하는 시스템을 개발하여 웹 Front-end를 구현하고 Django로 Database와 Front-end를 연결시켜서 만든 웹 서비스를 AWS(아마존웹서비스)서버를 이용하여 배포하는 것이 목표이다.<br>
+Theater Information Guide로 TIG는 Naver 웹 사이트에서 연극에 대한 정보를 파이썬으로 웹 크롤링을 위한 코드를 작성 후 데이터를 수집한 다음 MYSQL을 이용하여 Database화 하고 여러 기능을 제공하는 시스템을 개발하여 Bootstrap으로 웹 Front-end를 구현하고 Django로 Database와 Front-end를 연결시켜서 만든 웹 서비스를 AWS(아마존웹서비스) 서버를 이용하여 배포하는 것이 목표이다.<br>
 
 **2020.01.02 ~ 2020.02.26**
 
