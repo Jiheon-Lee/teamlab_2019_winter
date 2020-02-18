@@ -1,7 +1,7 @@
 5주차 Django
 =========================
 
-**목표** : Django로 이전에 만들었던 Database와 Front-end를 연결한다. 2020.01.30 ~ 2020.02.05
+**목표** : Django로 이전에 만들었던 Database와 Front-end를 연결한다. Django Form을 이용하여 검색 기능을 구현하고 Pagination, 인기순과 최신순 그리고 이름순은 jQuery ajax를 이용하여 코드를 작성하여 각 기능들을 구현한다. 2020.01.30 ~ 2020.02.05
 
 Courses
 -------
