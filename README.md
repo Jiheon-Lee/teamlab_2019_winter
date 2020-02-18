@@ -7,7 +7,12 @@ TEAMLAB 2019 Winter Study
 
 TIG 프로젝트
 -------------------
-Theater Information Guide로 파이썬으로 웹 크롤링을 위한 코드를 작성,<br>수집한 데이터를 MYSQL을 이용하여 DB화,<br>여러 기능을 제공하는 시스템을 개발,<br>Bootstrap으로 웹 Front-end를 구현,<br>Django로 Database와 Front-end를 연결, jQuery(ajax) 코드 작성,<br>AWS(아마존웹서비스) 서버를 이용하여 배포하는 것이 목표이다.<br>
+1. Theater Information Guide로 파이썬으로 웹 크롤링을 위한 코드를 작성
+2. 수집한 데이터를 MYSQL을 이용하여 DB화
+3. 여러 기능을 제공하는 시스템을 개발
+4. Bootstrap으로 웹 Front-end를 구현
+5. Django로 Database와 Front-end를 연결, jQuery(ajax) 코드 작성
+6. AWS(아마존웹서비스) 서버를 이용하여 배포하는 것이 목표이다.<br>
 
 **2020.01.02 ~ 2020.02.26**
 
