@@ -131,7 +131,6 @@ def search(request):
         data_dict['place'] = i.theaterid.place
         data_dict['image'] = i.image
         search_data.append(data_dict)
-    print(search_data)
     context = {
         'search_data': search_data
     }
