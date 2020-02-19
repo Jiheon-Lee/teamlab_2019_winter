@@ -2,9 +2,9 @@
 =========================
 
 **목표** : 
-1. Django로 이전에 만들었던 Database와 Front-end를 연결한다.
-2. Django Form을 이용하여 검색 기능을 구현한다.
-3. Pagination, 인기순과 최신순 그리고 이름순은 jQuery ajax를 이용하여 코드를 작성하여 각 기능들을 구현한다.
+1. Django로 이전에 만들었던 Database와 Front-end를 연결
+2. Django Form을 이용하여 검색 기능을 구현
+3. Pagination, 인기순, 최신순과 같은 각 기능들을 구현하기 위한 jQuery ajax 코드를 작성
 
 **2020.01.30 ~ 2020.02.05**
 

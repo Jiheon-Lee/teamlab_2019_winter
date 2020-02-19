@@ -26,7 +26,7 @@ CREATE TABLE theaters(
     TheaterName varchar(50) not null,
     Period varchar(50) not null,
     Place varchar(50) not null,
-    OpeningDay date not null,
+    OpeningDay date null,
     ClosingDay date null,
     OpenRun varchar(50) default null,
     primary key(TheaterID)
