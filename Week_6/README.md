@@ -13,7 +13,8 @@
 **2020.02.06 ~ 2020.02.12**
 
 ![AWS Instance](https://user-images.githubusercontent.com/48443734/74807987-29e92380-532d-11ea-88ea-f3d993f47b0d.png)
-
+<br>
+**http://ec2-54-180-113-171.ap-northeast-2.compute.amazonaws.com:8080/**
 
 Courses
 -------
