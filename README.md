@@ -38,3 +38,8 @@ TIG 기능
 [AWS Bootcamp](https://github.com/Jiheon-Lee/teamlab_2019_winter/tree/master/Week_6)|AWS로 만들었던 웹 서비스 시스템을 배포|2020.02.06 ~ 2020.02.12
 프로젝트 개발 완성|기존에 부족했던 부분이나 업그레이드 시켜야 할 부분 업그레이드(완성도 올리기)|2020.02.13 ~ 2020.02.19
 발표|간단한 ppt 등을 이용하여 본인이 만든 시스템 소개하기|2020.02.20 ~ 2020.02.26
+
+<br>
+
+TEAMLAB Blog 프로젝트 진행과정 및 최종 코드 포스팅 by Jiheon-Lee
+> https://teamlab.github.io/jekyllDecent/blog/2019%20winter%20course%20for%20undergraduate%20students/Theater-Information-Guide_%EC%9D%B4%EC%A7%80%ED%97%8C
