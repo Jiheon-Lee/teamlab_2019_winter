@@ -41,5 +41,11 @@ TIG 기능
 
 <br>
 
+실행 결과 화면 영상
+-------------------
+[![Result Video](https://user-images.githubusercontent.com/48443734/79122015-a6e6c580-7dd1-11ea-877b-273dee1b6f40.png)](https://youtu.be/AKnNzRfxUuo)
+
+<br>
+
 TEAMLAB Blog 프로젝트 진행과정 및 최종 코드 포스팅 by Jiheon-Lee
 > https://teamlab.github.io/jekyllDecent/blog/2019%20winter%20course%20for%20undergraduate%20students/Theater-Information-Guide_%EC%9D%B4%EC%A7%80%ED%97%8C
